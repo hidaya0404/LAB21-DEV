@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.humidity.HumidityFragment">
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/txtHumidityValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Humidité : en attente..."
+        android:textSize="18sp"
+        android:padding="8dp" />
+
+    <ensa.ma.sensors.views.LineChartView
+        android:id="@+id/lineChartHumidity"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="16dp" />
+</FrameLayout>

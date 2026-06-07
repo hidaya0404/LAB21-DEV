@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtMotionTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Capteur de mouvement"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:padding="12dp" />
+
+        <TextView
+            android:id="@+id/txtMotionStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="En attente des données..."
+            android:textSize="16sp"
+            android:gravity="center"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/txtX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="X : --"
+            android:textSize="18sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/txtY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Y : --"
+            android:textSize="18sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/txtZ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Z : --"
+            android:textSize="18sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/txtMagnitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Magnitude : --"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="8dp" />
+
+        <ensa.ma.sensors.views.LineChartView
+            android:id="@+id/lineChartMotion"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+</ScrollView>
